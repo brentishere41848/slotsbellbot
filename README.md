@@ -57,6 +57,14 @@ Register slash commands:
 pnpm commands:register
 ```
 
+For Docker, command registration is a one-off command. Run it after filling in `.env` and after building the image:
+
+```bash
+sudo docker run --rm --env-file .env slotsbells-bot node dist/register-commands.js
+```
+
+If `DISCORD_GUILD_ID` is set, commands register to that server and usually appear immediately. If it is empty, commands register globally and can take up to 1 hour to appear.
+
 Run the bot in development:
 
 ```powershell
@@ -90,6 +98,7 @@ Docker is also supported:
 
 ```bash
 docker build -t slotsbells-bot .
+docker run --rm --env-file .env slotsbells-bot node dist/register-commands.js
 docker run --env-file .env -v slotsbells-data:/app/data slotsbells-bot
 ```
 
