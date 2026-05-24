@@ -1,0 +1,17 @@
+[Unit]
+Description=Slotsbell Discord Giveaway Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/slotsbells-bot
+EnvironmentFile=/opt/slotsbells-bot/.env
+ExecStart=/usr/bin/pnpm start
+Restart=always
+RestartSec=10
+User=slotsbell
+Group=slotsbell
+
+[Install]
+WantedBy=multi-user.target
