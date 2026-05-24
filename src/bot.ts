@@ -14,14 +14,14 @@ import {
   PermissionFlagsBits,
   userMention
 } from "discord.js";
-import { brandAuthor, slotsbellBrand } from "./brand";
-import { commandJson, type RoleConfigAction } from "./commands";
-import { parseDuration, formatDiscordTimestamp } from "./duration";
-import { checkEligibility, createEntrant, selectWeightedWinners } from "./giveaway";
-import { formatRoleList, parseRoleBonuses, parseRoleIds } from "./roles";
-import { JsonGiveawayStorage } from "./storage";
-import type { BotConfig } from "./config";
-import type { GiveawayRecord, GuildSettings } from "./types";
+import { brandAuthor, slotsbellBrand } from "./brand.js";
+import { commandJson, type RoleConfigAction } from "./commands.js";
+import { parseDuration, formatDiscordTimestamp } from "./duration.js";
+import { checkEligibility, createEntrant, selectWeightedWinners } from "./giveaway.js";
+import { formatRoleList, parseRoleBonuses, parseRoleIds } from "./roles.js";
+import { JsonGiveawayStorage } from "./storage.js";
+import type { BotConfig } from "./config.js";
+import type { GiveawayRecord, GuildSettings } from "./types.js";
 
 const activeButtonId = "giveaway:enter";
 const participantsButtonId = "giveaway:participants";

@@ -1,4 +1,4 @@
-import type { RoleBonus } from "./types";
+import type { RoleBonus } from "./types.js";
 
 const roleTokenPattern = /<@&(?<mentionId>\d+)>|(?<plainId>\d{15,25})/g;
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { checkEligibility, createEntrant, selectWeightedWinners } from "../src/giveaway";
-import type { GiveawayRecord } from "../src/types";
+import { checkEligibility, createEntrant, selectWeightedWinners } from "../src/giveaway.js";
+import type { GiveawayRecord } from "../src/types.js";
 
 function baseGiveaway(): GiveawayRecord {
   return {

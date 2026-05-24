@@ -1,4 +1,4 @@
-import type { GiveawayEntrant, GiveawayRecord, RoleBonus } from "./types";
+import type { GiveawayEntrant, GiveawayRecord, RoleBonus } from "./types.js";
 
 export type EligibilityInput = {
   userId: string;

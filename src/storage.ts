@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
-import type { GiveawayRecord, GiveawayStore, GuildSettings } from "./types";
+import type { GiveawayRecord, GiveawayStore, GuildSettings } from "./types.js";
 
 const emptyStore = (): GiveawayStore => ({
   giveaways: {},

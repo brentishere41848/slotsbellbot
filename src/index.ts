@@ -1,5 +1,5 @@
-import { loadConfig } from "./config";
-import { createGiveawayBot } from "./bot";
+import { loadConfig } from "./config.js";
+import { createGiveawayBot } from "./bot.js";
 
 const config = loadConfig();
 const client = createGiveawayBot(config);

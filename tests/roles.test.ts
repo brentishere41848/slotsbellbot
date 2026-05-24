@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseRoleBonuses, parseRoleIds } from "../src/roles";
+import { parseRoleBonuses, parseRoleIds } from "../src/roles.js";
 
 describe("role parsing", () => {
   it("parses role bonus entries from mentions", () => {
